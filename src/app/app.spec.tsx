@@ -10,6 +10,6 @@ describe('App', () => {
 
   it('should have a greeting as the title', () => {
     const { getByText } = render(<App />);
-    expect(getByText(/Welcome wc-scoreboard/gi)).toBeTruthy();
+    expect(getByText(/hello/)).toBeTruthy();
   });
 });
