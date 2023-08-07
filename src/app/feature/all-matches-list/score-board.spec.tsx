@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import AllMatchesList from './all-matches-list';
+import ScoreBoard from './score-board';
 
 describe('AllMatchesList', () => {
     it('should render successfully', () => {
-        const { baseElement } = render(<AllMatchesList />);
+        const { baseElement } = render(<ScoreBoard />);
         expect(baseElement).toBeTruthy();
     });
 });

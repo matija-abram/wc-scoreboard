@@ -2,7 +2,7 @@ import styles from './app.module.scss';
 import { ScoreboardProvider } from './context/scoreboard-provider/scoreboard-provider';
 import ActiveMatchList from './feature/active-match-list/active-match-list';
 import NewMatch from './feature/new-match/new-match';
-import AllMatchesList from './feature/all-matches-list/all-matches-list';
+import ScoreBoard from './feature/all-matches-list/score-board';
 
 export function App() {
     return (
@@ -15,7 +15,7 @@ export function App() {
                     <ActiveMatchList />
                 </div>
                 <div>
-                    <AllMatchesList />
+                    <ScoreBoard />
                 </div>
             </div>
         </ScoreboardProvider>

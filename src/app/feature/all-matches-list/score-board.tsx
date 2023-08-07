@@ -1,4 +1,4 @@
-import styles from './all-matches-list.module.scss';
+import styles from './score-board.module.scss';
 import { useContext, useMemo } from 'react';
 import { ScoreboardContext } from '../../context/scoreboard-provider/scoreboard-provider';
 import { Match } from '../../lib/game/match';
@@ -17,7 +17,7 @@ const sort = (match1: Match, match2: Match) => {
     return 0;
 };
 
-export function AllMatchesList(props: AllMatchesListProps) {
+export function ScoreBoard(props: AllMatchesListProps) {
     const { scoreboard } = useContext(ScoreboardContext);
     const sortedScore = useMemo(() => [...scoreboard].reverse().sort(sort), [scoreboard]);
     return (
@@ -32,4 +32,4 @@ export function AllMatchesList(props: AllMatchesListProps) {
     );
 }
 
-export default AllMatchesList;
+export default ScoreBoard;
