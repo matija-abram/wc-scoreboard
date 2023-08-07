@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import App from './app';
+import ActiveMatchList from './active-match-list';
 
-describe('App', () => {
+describe('ActiveMatchList', () => {
     it('should render successfully', () => {
-        const { baseElement } = render(<App />);
+        const { baseElement } = render(<ActiveMatchList />);
         expect(baseElement).toBeTruthy();
     });
 });
