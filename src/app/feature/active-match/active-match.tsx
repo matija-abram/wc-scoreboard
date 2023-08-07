@@ -17,6 +17,8 @@ export function ActiveMatch({ match }: ActiveMatchProps) {
 
     const onSubmit = (e: FormEvent) => {
         e.preventDefault();
+        match.updateScore(homeScore, awayScore);
+        update(match);
     };
 
     return (
