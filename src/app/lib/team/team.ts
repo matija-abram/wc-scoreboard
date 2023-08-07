@@ -21,6 +21,4 @@ export class Team {
     public get score(): number {
         return this._score;
     }
-
-    public getShortName = (length = Team.NAME_LENGTH): string => this.name.substring(0, length).toUpperCase();
 }
