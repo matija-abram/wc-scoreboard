@@ -14,6 +14,9 @@ export function App() {
                 <div>
                     <ActiveMatchList />
                 </div>
+                <div>
+                    <AllMatchesList />
+                </div>
             </div>
         </ScoreboardProvider>
     );
