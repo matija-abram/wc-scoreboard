@@ -1,10 +1,17 @@
 .formWrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 2em;
     padding: 1em;
     background: lightskyblue;
+
+    h2 {
+        margin: 0;
+        flex: 0 0 100%;
+    }
 }
 .label {
     display: block;
     font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
 }

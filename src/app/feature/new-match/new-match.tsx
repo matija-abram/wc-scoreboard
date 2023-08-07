@@ -27,6 +27,7 @@ export function NewMatch(props: NewMatchProps) {
     return (
         <form onSubmit={onSubmit}>
             <div className={styles.formWrapper}>
+                <h2>Add new Match</h2>
                 <div>
                     <label>
                         <span className={styles.label}>Away Team Name</span>

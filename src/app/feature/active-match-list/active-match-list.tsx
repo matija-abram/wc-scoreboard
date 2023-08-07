@@ -11,6 +11,7 @@ export function ActiveMatchList(props: ActiveMatchListProps) {
 
     return (
         <div className={styles.wrapper}>
+            <h2>In progress</h2>
             <ul className={styles.list}>
                 {scoreboard.map((match, index) => (
                     <li key={index}>

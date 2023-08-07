@@ -27,7 +27,7 @@ export function ActiveMatch({ match }: ActiveMatchProps) {
                 <div className={styles.form}>
                     <div>
                         <label>
-                            <span className={styles.label}>{h.name}</span>
+                            <h3 className={styles.label}>{h.name}</h3>
                             <input
                                 value={homeScore}
                                 onChange={(e) => setHomeScore(parseInt(e.target.value))}
@@ -41,7 +41,7 @@ export function ActiveMatch({ match }: ActiveMatchProps) {
                     <span>-</span>
                     <div>
                         <label>
-                            <span className={styles.label}>{a.name}</span>
+                            <h3 className={styles.label}>{a.name}</h3>
                             <input
                                 value={awayScore}
                                 onChange={(e) => setAwayScore(parseInt(e.target.value))}
@@ -52,11 +52,11 @@ export function ActiveMatch({ match }: ActiveMatchProps) {
                             />
                         </label>
                     </div>
-                    <button type="submit">Update</button>
+                    <button type="submit">↻ Update</button>
                 </div>
             </form>
             <button type="button" onClick={() => finish(match)}>
-                -
+                ✔️ Finish
             </button>
         </div>
     );

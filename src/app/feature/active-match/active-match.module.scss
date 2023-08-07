@@ -1,10 +1,12 @@
 .form {
     display: flex;
+    align-items: end;
     gap: 2em;
 }
 
 .formWrapper {
     display: flex;
+    align-items: end;
     gap: 2em;
     border: solid 1px gray;
     padding: 1em;
@@ -14,4 +16,6 @@
 .label {
     display: block;
     font-weight: bold;
+    margin-top: 0;
+    text-align: center;
 }
