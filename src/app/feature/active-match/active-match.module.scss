@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    gap: 2em;
+}
+
+.formWrapper {
+    display: flex;
+    gap: 2em;
+    border: solid 1px gray;
+    padding: 1em;
+    border-radius: 2px;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+}
